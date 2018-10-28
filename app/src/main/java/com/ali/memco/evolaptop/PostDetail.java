@@ -25,7 +25,8 @@ public class PostDetail extends AppCompatActivity {
 
         getDataFromIntent();
 		
-		//changed in opc
+		//changed in pc
+		//changed in laptop
 
 
 
