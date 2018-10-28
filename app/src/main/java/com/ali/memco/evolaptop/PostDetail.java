@@ -24,6 +24,8 @@ public class PostDetail extends AppCompatActivity {
         initViews();
 
         getDataFromIntent();
+		
+		//changed in opc
 
 
 
