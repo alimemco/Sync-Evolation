@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_margin_2x"
+    tools:context=".SignUp">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:id="@+id/signUp_txt_moshakhasat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/big_text_size"
+            android:text="مشخصات"
+            android:gravity="right"
+            />
+
+        <EditText
+            android:id="@+id/signUp_ed_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:padding="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:background="@drawable/shape_edittext_blue"
+            android:hint="نام"/>
+
+        <EditText
+            android:id="@+id/signUp_ed_txt_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:padding="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:background="@drawable/shape_edittext_blue"
+            android:hint="نام خانوادگی"/>
+
+
+        <EditText
+            android:id="@+id/signUp_ed_txt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:padding="@dimen/standard_margin"
+            android:background="@drawable/shape_edittext_blue"
+            android:hint="سن"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:background="@color/light_gray"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/signUp_txt_takhasos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/big_text_size"
+            android:text="تخصص"
+            android:gravity="right"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/signUp_chb_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/color_blue"
+                android:text="java"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/signUp_chb_css"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:buttonTint="@color/color_blue"
+                android:text="Css"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/signUp_chb_html"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_blue"
+                android:text="Html"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pro_txt_jensiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/big_text_size"
+            android:text="جنسیت"
+            android:gravity="right"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/standard_margin_2x"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/signUp_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:buttonTint="@color/color_blue"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:text="مرد"/>
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/signUp_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:buttonTint="@color/color_blue"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:text="زن"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/signUp_switch_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="شاغل"
+            android:checked="true"
+            android:buttonTint="@color/color_blue"
+            android:backgroundTint="@color/color_blue"
+            app:switchPadding="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin" />
+
+        <Button
+            android:id="@+id/signUp_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_button_blue"
+            android:foreground="?attr/selectableItemBackground"
+            android:textSize="@dimen/big_text_size_dp"
+            android:text="ثبت نام"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

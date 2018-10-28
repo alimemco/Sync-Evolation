@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5fd080</color>
+    <color name="colorPrimaryDark">#43965b</color>
+    <color name="colorAccent">#607d8b</color>
+    <color name="colorAccentDark">#3f515a</color>
+    <color name="white">#fff</color>
+    <color name="new_news_green">#66BB6A</color>
+    <color name="visitedPost">#ff42</color>
+    <color name="color_orange">#ffc71c</color>
+    <color name="color_orange_dark">#F89406</color>
+    <color name="color_blue">#1bbc9b</color>
+    <color name="color_blue_dark">#aa1bbc9b</color>
+    <color name="light_gray">#ddd</color>
+</resources>

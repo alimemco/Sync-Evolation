@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetPicassActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/getPicasBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Request"/>
+            <ImageView
+                android:id="@+id/getPicasImg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic1"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic2"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic3"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic4"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic5"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic6"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/getPicasImg7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic2"
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

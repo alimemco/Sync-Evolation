@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_show_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.AnimationShow">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/anim_show_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin_2x"
+        app:switchPadding="@dimen/standard_margin"
+        android:text="from XML"
+
+        />
+
+    <ImageView
+        android:id="@+id/anim_show_kourosh"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/funny_boy"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/anim_show_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AnimButtonPrimary"
+        android:layout_marginBottom="@dimen/standard_margin_2x"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/big_text_size"
+        android:text="شروع"/>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    android:layout_margin="@dimen/standard_margin"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/cloth_img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/pic2__clothes"
+            android:adjustViewBounds="true"
+            />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin_2x"
+            android:layout_alignBottom="@id/cloth_img_pic"
+
+            >
+
+            <TextView
+                android:id="@+id/cloth_titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="عنوان محصول"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_text_size"
+                />
+
+            <TextView
+                android:id="@+id/cloth_countViewTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="700"
+                android:layout_below="@id/cloth_titleTxt"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/big_text_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_ic_views_white"
+                android:layout_below="@id/cloth_titleTxt"
+                android:layout_alignTop="@id/cloth_countViewTxt"
+                android:layout_alignBottom="@id/cloth_countViewTxt"
+                android:layout_toLeftOf="@id/cloth_countViewTxt"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

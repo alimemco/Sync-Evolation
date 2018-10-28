@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    tools:context=".view.activity.Profile_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
+            app:titleEnabled="false"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+
+
+                <ImageView
+                    android:id="@+id/profile_img_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/form_background"/>
+
+
+                <Button
+                    android:id="@+id/profile_btn_change_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignRight="@id/profile_img_background"
+                    android:layout_alignBottom="@id/profile_img_background"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:text="تغییر عکس"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/shape_button_orange"
+                    android:textSize="@dimen/big_text_size_dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_above="@+id/profile_btn_change_pro"
+                    android:layout_alignLeft="@id/profile_btn_change_pro"
+                    android:layout_alignRight="@+id/profile_btn_change_pro"
+                    android:src="@drawable/default_avatar" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_img_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+            <memco.ali.com.customfontlib.CFtextview
+                android:id="@+id/pro_txt_moshakhasat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginTop="@dimen/standard_margin_2x"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/big_text_size"
+                android:text="مشخصات"
+                app:fonts="light"
+                android:gravity="right"
+                />
+
+            <EditText
+                android:id="@+id/ed_txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_form"
+                android:layout_marginLeft="@dimen/margin_form"
+                android:padding="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"
+              android:background="@drawable/shape_edittext_blue"
+               android:hint="نام"/>
+
+        <EditText
+            android:id="@+id/ed_txt_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:padding="@dimen/standard_margin"
+            android:background="@drawable/shape_edittext_blue"
+          android:hint="نام خانوادگی"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:layout_marginLeft="@dimen/standard_margin_2x"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:background="@color/light_gray"
+            />
+
+
+
+
+        <memco.ali.com.customfontlib.CFtextview
+            android:id="@+id/pro_txt_takhasos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/big_text_size"
+            android:text="تخصص"
+            app:fonts="bold"
+            android:gravity="right"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/chb_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+               android:buttonTint="@color/color_blue"
+                android:text="java"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/chb_css"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:buttonTint="@color/color_blue"
+                android:text="Css"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/chb_html"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_blue"
+                android:buttonTintMode="src_in"
+                android:text="Html"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pro_txt_jensiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin_2x"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/big_text_size"
+            android:text="جنسیت"
+            android:gravity="right"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/standard_margin_2x"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:buttonTint="@color/color_blue"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+            android:text="مرد"/>
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text_size"
+                android:layout_marginLeft="@dimen/standard_margin_2x"
+                android:buttonTint="@color/color_blue"
+                android:layout_marginRight="@dimen/standard_margin_2x"
+                android:text="زن"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/profile_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_form"
+            android:layout_marginRight="@dimen/margin_form"
+            android:layout_marginTop="@dimen/standard_margin_2x"
+           android:textColor="@color/white"
+            android:background="@drawable/shape_button_blue"
+            android:foreground="?attr/selectableItemBackground"
+            android:textSize="@dimen/big_text_size_dp"
+            android:text="ثبت اطلاعات"/>
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

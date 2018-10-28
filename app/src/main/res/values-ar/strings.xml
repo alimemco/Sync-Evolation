@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">انقلاب</string>
+<string name="title_activity_profile_">Profile_Activity</string>
+<string name="title_POSTS_ACTIVITY">المشارکات</string>
+<string name="title_USER_PROFILE">الملف الشخصی</string>
+<string name="title_FASHION">متجر القماش</string>
+<string name="title_MUSIC">مشغل موسیقی</string>
+<string name="title_VIDEO">مشغل فیدیوهات</string>
+<string name="title_LOGIN">المستخدم</string>
+    </resources>

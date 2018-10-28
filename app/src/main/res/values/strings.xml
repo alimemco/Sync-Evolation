@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LapTop</string>
+    <string name="title_activity_profile_">Profile_Activity</string>
+    <string name="title_POSTS_ACTIVITY">خبرها</string>
+    <string name="title_USER_PROFILE">پروفایل کاربری</string>
+    <string name="title_FASHION">فروشگاه لباس</string>
+    <string name="title_MUSIC">موزیک پلیر</string>
+    <string name="title_VIDEO">فیلم</string>
+    <string name="title_LOGIN">حساب کاربری</string>
+    <string name="title_ANIMATION">انیمیشن ها</string>
+    <string name="title_MAP">نقشه گوگل</string>
+    <string name="app_feature_animations_in_android">انیمیشن در اندروید</string>
+    <string name="animations_alpha">Alpha</string>
+    <string name="animations_translate">Translate</string>
+    <string name="animations_scale">Scale</string>
+    <string name="animations_rotate">Rotate</string>
+    <string name="animations_value_animator">Value Animator</string>
+    <string name="animations_set_animation">Set</string>
+    <string name="animations_YoYo_animation">YoYo</string>
+    <string name="animations_label_list_of_animations">لیست انیمیشن ها در اندروید:</string>
+    <string name="animations_main_activity_toolbar_title">انیمیشن در اندروید</string>
+
+</resources>

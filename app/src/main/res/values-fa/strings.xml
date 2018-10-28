@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Evolation</string>
+    <string name="title_activity_profile_">Profile_Activity</string>
+    <string name="title_POSTS_ACTIVITY">خبرها</string>
+    <string name="title_USER_PROFILE">پروفایل کاربری</string>
+    <string name="title_FASHION">فروشگاه لباس</string>
+    <string name="title_MUSIC">موزیک پلیر</string>
+    <string name="title_VIDEO">فیلم</string>
+    <string name="title_LOGIN">حساب کاربری</string>
+</resources>
