@@ -27,6 +27,7 @@ public class PostDetail extends AppCompatActivity {
 		
 		//changed in pc
 		//changed in laptop
+		//changed from server
 
 
 
