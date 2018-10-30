@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MusicPlayer">
+
+    <RelativeLayout
+        android:id="@+id/video_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/standard_margin"
+        >
+
+        <ImageView
+            android:id="@+id/video_toolbar_image"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_music_player"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video player"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/big_text_size"
+            android:layout_toRightOf="@id/video_toolbar_image"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/video_toolbar"
+        android:layout_above="@id/controler">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/video_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/controler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_margin"
+        android:layout_above="@id/video_seekbar"
+        >
+
+
+        <ImageView
+            android:id="@+id/video_play"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/ic_play"
+            android:background="@drawable/play_background"
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            />
+
+        <ImageView
+            android:id="@+id/video_forward"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_fast_forward_black_48dp"
+            android:layout_toRightOf="@id/video_play"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/standard_margin"/>
+
+
+        <ImageView
+            android:id="@+id/video_backward"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_fast_rewind_black_48dp"
+            android:layout_toLeftOf="@id/video_play"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/video_cutime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/video_alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
