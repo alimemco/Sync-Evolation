@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:id="@+id/widget_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/standard_margin"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/widget_txt_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="57"
+        android:textSize="@dimen/big_text_size"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:textColor="@color/white"/>
+
+
+    <ImageView
+        android:id="@+id/widget_img_weather"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/widget_txt_temp"
+        tools:src="@drawable/clear_sky"/>
+
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/widget_txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abadan"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="@dimen/big_text_size"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_centerInParent="true"
+        />
+
+</LinearLayout>
