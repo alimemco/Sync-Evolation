@@ -93,7 +93,7 @@
 
 
 
-            <memco.ali.com.customfontlib.CFtextview
+            <TextView
                 android:id="@+id/pro_txt_moshakhasat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,7 +103,6 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/big_text_size"
                 android:text="مشخصات"
-                app:fonts="light"
                 android:gravity="right"
                 />
 
@@ -140,7 +139,7 @@
 
 
 
-        <memco.ali.com.customfontlib.CFtextview
+        <TextView
             android:id="@+id/pro_txt_takhasos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,7 +148,6 @@
             android:textColor="@android:color/black"
             android:textSize="@dimen/big_text_size"
             android:text="تخصص"
-            app:fonts="bold"
             android:gravity="right"
             />
 
