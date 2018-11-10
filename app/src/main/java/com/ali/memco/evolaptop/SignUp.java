@@ -1,4 +1,4 @@
-package com.ali.memco.evolaptop;
+package com.ali.memco.evolation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.ali.memco.evolaptop.dataModel.ApiService;
+import com.ali.memco.evolation.dataModel.ApiService;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -73,7 +73,12 @@ public class SignUp extends AppCompatActivity {
         try {
             jsonObject.put("first_name",first_name.getText().toString());
             jsonObject.put("last_name",last_name.getText().toString());
-            jsonObject.put("age",age.getText().toString());
+            if (age.getText().toString().equals("")){
+                jsonObject.put("age",0);
+            }else {
+                jsonObject.put("age",age.getText().toString());
+            }
+
 
             if (male.isChecked()){
                 jsonObject.put("gender","male");

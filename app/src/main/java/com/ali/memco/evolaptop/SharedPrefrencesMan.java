@@ -1,9 +1,9 @@
-package com.ali.memco.evolaptop;
+package com.ali.memco.evolation;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.ali.memco.evolaptop.dataModel.User;
+import com.ali.memco.evolation.dataModel.User;
 
 public class SharedPrefrencesMan {
 

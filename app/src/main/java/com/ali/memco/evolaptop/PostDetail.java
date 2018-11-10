@@ -1,4 +1,4 @@
-package com.ali.memco.evolaptop;
+package com.ali.memco.evolation;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -24,10 +24,6 @@ public class PostDetail extends AppCompatActivity {
         initViews();
 
         getDataFromIntent();
-		
-		//changed in pc
-		//changed in laptop
-		//changed from server
 
 
 

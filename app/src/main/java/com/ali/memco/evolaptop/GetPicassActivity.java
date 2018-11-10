@@ -1,4 +1,4 @@
-package com.ali.memco.evolaptop;
+package com.ali.memco.evolation;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;

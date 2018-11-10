@@ -1,4 +1,4 @@
-package com.ali.memco.evolaptop;
+package com.ali.memco.evolation;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.ali.memco.evolaptop.AsyncTask.AddPostTask;
-import com.ali.memco.evolaptop.dataModel.Post;
+import com.ali.memco.evolation.AsyncTask.AddPostTask;
+import com.ali.memco.evolation.dataModel.Post;
 
 import java.util.ArrayList;
 import java.util.List;
